@@ -386,5 +386,14 @@ footer a{
     footer a{
         font-size: 10pt;  
     }
+        .col1{
+        width: 70%;}
+    .col2{
+        width: 30%;
+        font-size: 12pt;
+    }    
+    .texto__logo {
+       font-size: 12pt;    
+    }  
 }
   
