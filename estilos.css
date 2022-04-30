@@ -395,5 +395,9 @@ footer a{
     .texto__logo {
        font-size: 12pt;    
     }  
+      .logo{
+        height: 50px;
+        margin-left: 0%;
+    }
 }
   
