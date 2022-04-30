@@ -1,0 +1,390 @@
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box;    
+}
+
+header{
+    height: 10%;
+    width:100%;
+    background-color: rgb(53, 58, 64);  
+    display: flex;   
+}
+.col1{
+    width: 35%;
+    display: flex;
+    align-items: center; 
+}
+.logo{
+    height: 60px;
+}
+.texto__logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;  
+    color: white;
+}
+.col2{
+    margin-left: 20%;
+    width: 65%;   
+    font-size: 14pt;  
+} 
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.blanco{
+    color: white;
+    }
+.verde{    
+    color: rgb(40, 144, 65);
+    }
+.gris{
+    color: rgb(156, 156, 158);
+}
+/*Aca termina el header */
+
+/*comienza el carousel*/
+.contenedor__a{
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    /*overflow: hidden hace que el padre
+     recorte imagen a su tamaños ; */
+}
+.col__car1{
+    width: 100%; 
+    height:100%;
+    margin-top: -11%;
+    object-fit: cover; /*para que no se deforme la imagen*/
+    filter: brightness(0.5); /*para oscurecer la imagen*/    
+}
+ .col__car2{
+    margin-top: 13%;
+    margin-right: 10%;
+    color: white;
+    position: absolute;
+    font-size: 16pt;
+    text-align: right;
+    width:35%;
+}
+/*botones carrusel*/
+.boton__transparente{
+    background-color: transparent; 
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white; 
+}
+.boton__verde{
+    background-color: rgb(40, 144, 65); 
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(40, 144, 65); 
+}
+/*Termina carrusel*/
+
+/*Comienza oradores*/               
+.oradores{
+    text-align: center;
+    margin-top:1%;
+}
+.las_tres_cards{
+width: 100%;
+display: flex;
+text-align:left;
+}
+.card{
+    margin-left: 3%;
+}
+.margen__cards{
+    margin-left: 5%;
+}
+.boton__java{
+    margin-top: 5%;
+    background-color: rgb(254, 193, 7); 
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold; 
+}
+.boton__react{
+    margin-top: 5%;
+    background-color: rgb(23, 162, 185);   
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold; /*negrita*/
+}
+.boton__negocios{
+    margin-top: 5%;
+    background-color: rgb(109, 116, 124);   
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold; 
+}
+.boton__startups{
+    margin-top: 5%;
+    background-color: rgb(220, 53, 70);   
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold; 
+}
+/*aca terminan las cards*/
+
+/*comienza bs as octubre - pantalla dividida*/
+.contenedor__b{
+    margin-top:3%;
+    display: flex;
+    height: 60vh;
+    width: 100%; 
+    background-color: rgb(53, 58, 64);      
+}
+.col__paisaje{
+    width: 50%;
+    height: 60vh;   
+}
+.col__paisaje img{
+    width:100%;
+    height: 60vh;
+    object-fit: cover; 
+}
+.bs__octubre{
+    width:50%;
+    height:50vh;
+    margin-left:2%;
+    margin-top: 2%;
+    color: white;  
+}
+.conocemas{
+    background-color: transparent; 
+    color: white;
+    font-size: 15px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:12px;
+    padding-right:12px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white; 
+}
+.contenedor_form{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.conviertete{
+   width:38%;
+   margin-top: 2% ;
+   text-align: center;
+ 
+}
+u{
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+} /*u en html es para subrayar el resto para hacer puntos*/
+
+.nombre__y__apellido{
+
+    margin-bottom: 1%;
+}
+#nombre{
+    width:49.5%;
+}
+#apellido{
+    width:49.5%;
+}
+#comentario{
+    width:100%;
+    height:100px;
+}
+#enviar{
+    background-color:rgb(150, 201, 62);
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+    padding-top:8px;
+    padding-bottom:10px;
+    padding-left:47%;
+    padding-right:46%;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent; 
+    margin-bottom: 2%;
+    text-align: center;
+}
+.tu_charla{
+   text-align: left;
+   
+}
+footer{
+    background: linear-gradient(90deg,#1d3a4a 0%, #1d5271 80%);
+    height:10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+footer a{
+    text-decoration: none;
+    font-size: 14pt; 
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+ 
+  /* pantalla maximo 980px */ 
+  @media screen and (max-width:980px) {
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+    }
+    .contenedor__a{
+        position: relative;
+        height:100%
+    }   
+    .col__car2{
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
+        position: absolute;
+        font-size: 14pt;
+        text-align: center;
+        width:100%;        
+    }
+    footer{
+        height: 15%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+       font-size: 12pt;            
+    } 
+}
+   
+  /* pantalla maximo 700px */
+
+  @media screen and (max-width:700px) {
+   
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+        font-size: 12pt;
+    }    
+    .texto__logo {
+       font-size: 12pt;    
+    }  
+    .col__car2{
+        background-color: rgb(53, 58, 64);  
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+        position: relative;
+        font-size: 12pt;
+        text-align: center;
+        width:100%;  
+        height:40vh;
+        margin-bottom: -15%;      
+    }
+    .col__car2 h1{
+        margin-top: 1%;
+        font-size: 16pt;
+    }
+    .botones{
+        margin-top: -2%;
+   }
+    .boton__transparente{
+        font-size: 14px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .boton__verde{
+        font-size: 14px;
+        padding-top:2px;
+        padding-bottom:2px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    .las_tres_cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+        justify-items: center;
+        }
+        .bs__octubre{
+            font-size: 10pt;
+        }
+        .conocemas{
+            font-size: 11px;
+            padding-top:5px;
+            padding-bottom:5px;
+            padding-left:8px;
+            padding-right:8px;  
+        }
+        .conviertete{
+            width:20%;
+            margin-top: 2% ;
+            text-align: center;          
+         }
+         .conviertete{
+            width:70%;
+        }
+
+    }    
+  
+  /* pantalla maximo 480px */
+  @media screen and (max-width:480px) {
+  
+    footer{
+        height: 10%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+        font-size: 10pt;  
+    }
+}
+  
