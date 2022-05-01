@@ -283,6 +283,9 @@ footer a{
         text-align: center;
         width:100%;        
     }
+    .bs__octubre{
+         font-size: 10pt;
+    }  
     footer{
         height: 15%;
         width: 100%;
