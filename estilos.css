@@ -286,6 +286,13 @@ footer a{
     .bs__octubre{
          font-size: 10pt;
     }  
+    .conocemas{
+        font-size: 11px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:8px;
+        padding-right:8px;  
+    }  
     footer{
         height: 15%;
         width: 100%;
