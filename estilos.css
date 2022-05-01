@@ -414,15 +414,22 @@ footer a{
         height:40vh;
     }
     .las_tres_cards{
-        margin-left:1%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .contenedor__b{
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+        width: 100%;       
     }
     .col__paisaje img{
     width:100%;
-    height:50vh;
+    height:48vh;
     object-fit: cover; 
     }
     .bs__octubre{
-        width:50%;
+        width:100%;
         height:50vh;
         margin-left:2%;
         margin-right:2%;
@@ -430,5 +437,4 @@ footer a{
         color: white;  
     }
 }
-  
   
