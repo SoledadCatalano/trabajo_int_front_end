@@ -1,3 +1,4 @@
+
 *{
     padding: 0px; 
     margin: 0px; 
@@ -8,6 +9,7 @@ header{
     width:100%;
     background-color: rgb(53, 58, 64);  
     display: flex;
+
 }
 .col1{
     width: 35%;
@@ -178,7 +180,6 @@ text-align:left;
     width:50%;
     height:70vh;
     margin-left:2%;
-    margin-right:2%;
     margin-top: 2%;
     color: white;  
 }
@@ -202,13 +203,11 @@ text-align:left;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .conviertete{
    width:38%;
    margin-top: 2% ;
    text-align: center;
- 
 }
 u{
     border-bottom: 1px dotted #000;
@@ -216,7 +215,6 @@ u{
 } /*u en html es para subrayar el resto para hacer puntos*/
 
 .nombre__y__apellido{
-
     margin-bottom: 1%;
 }
 #nombre{
@@ -246,7 +244,6 @@ u{
 }
 .tu_charla{
    text-align: left;
-   
 }
 footer{
     background: linear-gradient(90deg,#1d3a4a 0%, #1d5271 80%);
@@ -265,7 +262,7 @@ footer a{
 }
 
 
- 
+
   /* pantalla maximo 980px */ 
   @media screen and (max-width:980px) {
     .col1{
@@ -296,26 +293,20 @@ footer a{
     footer a{
        font-size: 12pt;            
     } 
-    #enviar{
-        font-size: 16px;
-        padding-top:8px;
-        padding-bottom:10px;
-        padding-left:25%;
-        padding-right:25%;
-    }
-}   
+}
+
   /* pantalla maximo 700px */
 
   @media screen and (max-width:700px) {
-   
+
     .col1{
         width: 60%;}
     .col2{
         width: 40%;
-        font-size: 11pt;    
+        font-size: 11pt;
     }    
     .texto__logo {
-       font-size: 12pt;        
+       font-size: 12pt;
     }  
     .col__car2{
         background-color: rgb(53, 58, 64);  
@@ -350,25 +341,30 @@ footer a{
         padding-left:5px;
         padding-right:5px;
     }
-
     .las_tres_cards{
         width: 100%;
         display: flex;
         flex-direction: column;
-        text-align:left;       
+        text-align:left;
+        justify-items: center;
+        margin-left:0;
+        margin-right:0;
     }
     .contenedor__b{
         display: flex;
         flex-direction: column;
         height:100%;
-        width: 100%;       
+        width: 100%;
     }
     .col__paisaje{
-        width: 100%;       
+        width: 100%;
+    }
+    .col__paisaje img{
+        width:100%;
     }
     .bs__octubre{
-        width: 98%;
-        font-size: 10pt;
+       width: 98%;
+       font-size: 10pt;
     }
     .conocemas{
         font-size: 11px;
@@ -380,12 +376,20 @@ footer a{
     .conviertete{
         width:70%;
         margin-top: 2% ;
-        text-align: center;              
+        text-align: center;     
+    }
+    #enviar{
+        font-size: 16px;
+        padding-top:8px;
+        padding-bottom:10px;
+        padding-left:25%;
+        padding-right:25%;
     }
 }
+
   /* pantalla maximo 480px */
   @media screen and (max-width:480px) {
-  
+
     footer{
         height: 10%;
         width: 100%;
@@ -401,7 +405,7 @@ footer a{
     .col2{
         width: 45%;
         font-size: 10pt;
-        
+
     }                           
     .texto__logo {
        font-size: 9pt;    
@@ -412,10 +416,6 @@ footer a{
     }
     .col__car2{
         height:40vh;
-    }
-    .las_tres_cards{
-        margin-left:auto;
-        margin-right: auto;
     }
     .contenedor__b{
         display: flex;
@@ -436,5 +436,5 @@ footer a{
         margin-top: 2%;
         color: white;  
     }
-}
   
+}
