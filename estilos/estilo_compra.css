@@ -1,0 +1,346 @@
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box;    
+}
+
+header{
+    height: 10%;
+    width:100%;
+    background-color: rgb(53, 58, 64);  
+    display: flex;
+
+}
+.col1{
+    width: 25%;
+    display: flex;
+    align-items: center; 
+}
+.logo{
+    height: 60px;
+}
+.texto__logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;  
+    color: white;
+}
+.col2{
+    margin-left: 10%;
+    width: 75%;   
+    font-size: 17px;  
+} 
+nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.blanco{
+    color: white;
+    }
+.verde{    
+    color: rgb(40, 144, 65);
+    }
+.gris{
+    color: rgb(156, 156, 158);
+}
+
+main{
+    width: 100%;
+    margin:0 auto;
+}
+.card_descuentos{   
+    display: flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content: center;
+}
+.card_descuentos  div {
+    text-align: center;
+    width:230px;
+    vertical-align: top;
+    margin: 20px 3.5px;/*espacio externo*/
+    padding: 10px 10px;/*espacio interno*/
+    box-sizing: border-box;/*el borde es el limite de la caja*/
+    /*border: 1px solid #000000;*/
+}
+.card_descuentos .estudiante {
+    border: 2px solid rgb(0, 123, 255);  
+}
+.card_descuentos .trainee {
+    border: 2px solid rgb(23, 162, 184);  
+}
+.card_descuentos .junior {
+    border: 2px solid rgb(255, 193, 7); 
+}
+.porcentaje{
+    font-size:18px;
+    font-weight:bold;    
+}
+.estudiante:hover{
+   border: 5px solid rgb(0, 123, 255);  
+}
+.trainee:hover {
+    border: 5px solid rgb(23, 162, 184);  
+}
+.junior:hover{
+    border: 5px solid rgb(255, 193, 7); 
+}
+
+.seccion_formulario {
+    
+    width:100%;
+
+}
+.seccion_formulario h2, h6{
+    text-align: center;
+}
+
+
+.datos__uno{
+    justify-content: center;
+    text-align: center;
+}
+.padron, .cantidad_compra, .categoria-compra {
+    width: 350px;
+    border-radius: 5px;
+    border:1px solid rgb(179, 173, 173);
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.datos__dos{
+    width: 940px;
+    display: flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content: center;
+    
+}
+
+.mail{
+    width: 703px;
+    border-radius: 5px;
+    border:1px solid rgb(179, 173, 173);
+    padding: 5px 0;
+    margin: 10px 0;
+    
+}
+
+.cantidad, .categoria{
+    text-justify: left;
+    width:350px;
+    margin:10px 2px;
+}
+
+.total{
+    width: 703px;
+    display: flex;
+    padding: 10px;
+    margin:0 auto;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(204, 229, 255);
+}
+
+.p__total{
+    text-justify: left;
+    width:100%;
+    margin:0px 2px;
+    color:rgb(28, 61, 151);   
+}
+
+.botones__formulario{
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+}
+
+.borrar, .resumen{
+    width: 350px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 5px 0;
+    margin: 20px 2px;
+    color:white;
+    background-color: rgb(151,201,62);
+}
+.is-invalid::placeholder{
+    
+    color:rgb(161, 35, 35);
+}
+.is-invalid{
+    
+    border-color:  rgb(161, 35, 35);
+   
+}
+/*Aca termina el main y empieza el footer*/
+
+footer{
+    background: linear-gradient(90deg,#1d3a4a 0%, #1d5271 80%);
+    height:10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+footer a{
+    text-decoration: none;
+    font-size: 14pt; 
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+  /* pantalla maximo 980px */ 
+  @media screen and (max-width:980px) {
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+    }
+
+.card_descuentos{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;    
+    margin: 0 auto;
+
+}
+    footer{
+        height: 15%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+       font-size: 12pt;            
+    } 
+   
+}
+
+  /* pantalla maximo 700px */
+
+@media screen and (max-width:700px) {
+
+    .col1{
+        width: 60%;}
+    .col2{
+        width: 40%;
+        font-size: 11pt;
+    }    
+    .texto__logo {
+       font-size: 12pt;
+    }  
+    main{
+        width: 100%;      
+    }    
+    .card_descuentos{   
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .padron, .cantidad_compra, .categoria-compra {
+        width: 300px;  
+    }
+
+    .datos__dos{
+        width: 625px;
+    }
+    .mail{
+        width: 610px;
+
+    }
+    .total{
+        width: 600px; 
+    }
+    .borrar, .resumen{
+        width: 298px;
+    }
+    }
+
+  /* pantalla maximo 480px */
+  @media screen and (max-width:480px) {
+
+ 
+    .col1{
+        width: 55%;}
+    .col2{
+        width: 45%;
+        font-size: 10pt;
+
+    }                           
+    .texto__logo {
+       font-size: 9pt;    
+    }  
+    .logo{
+        height: 30px;
+        margin-left: 0%;
+    }
+    main{
+        width: 100%;        
+    }
+    .card_descuentos{   
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        } 
+    
+    .datos__uno{
+        width: 100%;
+        justify-content: center;     
+        margin: 0 auto;
+    }
+    .padron, .cantidad_compra, .categoria-compra {
+        width: 300px;       
+    }
+    
+    .datos__dos{
+        width: 100%;  
+        display: flex;
+        flex-direction: column;     
+    }
+   
+    .mail{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .cantidad, .categoria{      
+        width:300px;
+        margin: 0 auto;
+    }
+    
+    .total{
+        width: 300px;       
+    }
+        
+    .botones__formulario{
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+    
+    .borrar, .resumen{
+        width: 300px;
+        margin: 5px auto;
+    }
+
+
+
+    footer{
+        height: 10%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    footer a{
+        font-size: 10pt;  
+    } 
+}

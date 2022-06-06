@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo_compra.css">
+    <title>ConfBsAs</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="contenedor container-fluid">
+ 
+             <nav class="contenedor navbar navbar-expand-xxl navbar-light">
+                 <div class=" container-fluid">
+                     <div class="col1">
+                     <a href="index.html" class="navbar-brand"><img class="logo" src="imagenesFE/codoacodo.png" alt="codoacodo"></a>
+                     <h4 class="texto__logo">Conf Bs As </h4>
+                     </div>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="menuNavegacion">
+                         <ul class="col2 navbar-nav me-auto mb-2 mb-lg-0">
+                             <li class="nav-item"><a class="blanco active" aria-current="page" href="index.html">La conferencia</a> </li>
+                             <li class="nav-item"><a class="gris" href="index.html">Los oradores</a></li>
+                             <li class="nav-item"><a class="gris" href="index.html">El lugar y la fecha</a></li>
+                             <li class="nav-item-con"><a class="gris" href="index.html">Conviértete en orador</a></li>
+                             <li class="nav-item"><a class="verde" href="compra_de_ticket.html">Compra tickets</a></li>
+                         </ul>
+                     </div>    
+                 </div>
+             </nav>
+         </div>
+     </header>
+    <main>
+    <section class="card_descuentos">        
+        <div class="estudiante">  
+            <h3>Estudiante</h3>
+            <p>Tiene un descuento</p>
+            <p class="porcentaje">80%</p>
+            <p>*presentar documentación</p>
+        </div>
+
+        <div class="trainee">
+            <h3>Trainee</h3>
+            <p>Tiene un descuento</p>
+            <p class="porcentaje">50%</p>
+            <p>*presentar documentación</p>
+
+        </div>
+        <div class="junior">
+            <h3>Junior</h3>
+            <p>Tiene un descuento</p>
+            <p class="porcentaje">15%</p>
+            <p>*presentar documentación</p>
+        </div>
+    </section>
+    
+    <section class="seccion_formulario">
+        <h6>VENTA</H6>   
+        <h2>VALOR DE TICKET $200</h2>
+    
+        <form class="formulario" action="">
+
+            <div class="datos__uno">            
+                  <input type="text" id="nombre" class="padron" required placeholder=" Nombre">
+                
+                  <input type="text" id="apellido" class="padron" required placeholder=" Apellido">              
+            </div>
+            <div class="datos__dos">
+            <input type="email" id="correo"class="mail"required 
+            placeholder=" Correo">
+        </div>
+
+            <div class="datos__dos">
+                
+                <div class="cantidad"> 
+
+                <label for="inputcantidad" class="texto-padron">Cantidad</label>
+
+                <input type="number" min="1" class="cantidad_compra" id="inputcantidad"placeholder=" Cantidad" required>
+           
+                </div>
+                         
+                <div class="categoria">
+                <label for="inputCategoria" class="texto-padron">Categoría</label>
+                
+                <select id="inputCategoria" class="categoria-compra">
+                  <option value=""selected>--Seleccione--</option>
+                  <option value="0">Otro</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                  
+                </select>
+                </div>
+            </div>
+            
+        <div class="total">
+            <p class="p__total">
+                Total a Pagar: $ <span id="totalPago" class="alingn-middle"></span></p>
+        </div>
+            <div class="botones__formulario">
+               <div>   
+                <button type="reset"  id="borra" class="borrar">Borrar</button>
+            </div>
+            <div>
+                <button type="button" id="verresumen" class="resumen">Resumen</button>
+            </div>
+            </div>
+       </form>
+    </section>
+
+    </main>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="calculo.js"></script>
+
+</body>
+
+<footer>
+
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Contáctanos</a>
+    <a href="">Prensa</a>
+    <a href="">Conferencias</a>
+    <a href="">Términos y condiciones</a>
+    <a href="">Privacidad</a>
+    <a href="">Estudiantes</a>
+
+</footer>
+
+</html>
